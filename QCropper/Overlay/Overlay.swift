@@ -135,7 +135,6 @@ open class Overlay: UIView {
             let center = UIBezierPath(roundedRect: cropBox.frame, cornerRadius: min(cropBox.width, cropBox.height) / 2)
             bezierPath.append(center)
         } else {
-            print(cropBox.frame)
             let center = UIBezierPath(rect: cropBox.frame)
             bezierPath.append(center)
         }
