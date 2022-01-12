@@ -31,11 +31,14 @@ public extension CropperViewControllerDelegate {
 
 open class CropperViewController: UIViewController, Rotatable, StateRestorable, Flipable {
     public let originalImage: UIImage
+    public let imageName: String?
+
     var initialState: CropperState?
     var isCircular: Bool
 
-    public init(originalImage: UIImage, initialState: CropperState? = nil, isCircular: Bool = false) {
+    public init(originalImage: UIImage, imageName: String? = nil, initialState: CropperState? = nil, isCircular: Bool = false) {
         self.originalImage = originalImage
+        self.imageName = imageName
         self.initialState = initialState
         self.isCircular = isCircular
         super.init(nibName: nil, bundle: nil)
