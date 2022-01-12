@@ -24,11 +24,11 @@ public enum AspectRatio {
     var description: String {
         switch self {
         case .original:
-            return "ORIGINAL"
+            return NSLocalizedString("ORIGINAL", comment: "")
         case .freeForm:
-            return "FREEFORM"
+            return NSLocalizedString("FREEFORM", comment: "")
         case .square:
-            return "SQUARE"
+            return NSLocalizedString("SQUARE", comment: "")
         case let .ratio(width, height):
             return "\(width):\(height)"
         }
